@@ -21,10 +21,75 @@ body {
 	font-size: 16px
 }
 
-.top-nav {
+#self-label,
+#search-bar,
+.left-sidebar,
+.user-label {
+	font-size: 20px;
+}
+
+.add-user-label,
+.post-description {
+	font-size: 16px;
+}
+
+.top-nav,
+#input-box {
 	background-color: #222222;
-	width: 100%;
+}
+
+.left-sidebar,
+#people-you-might-know-text,
+.user-label,
+#kojima-username {
+	color: #FFFFFF;
+}
+
+.top-nav,
+.left-sidebar,
+.right-sidebar,
+.post-box,
+.post {
 	display: flex;
+}
+
+#search-bar,
+#search-icon,
+#default-self,
+#self-label,
+.sidebar-icon,
+.sidebar-label,
+.user-label,
+.add-user-label,
+.know-user,
+.post-box,
+.button,
+.post,
+.user-picture,
+#kojima-username,
+.post-icon {
+	position: relative;
+}
+
+#search-icon,
+#logo,
+#self-label,
+.sidebar-icon,
+.sidebar-label,
+.profile-picture,
+.user-label,
+.add-user-label,
+.post-box-icon,
+.button,
+.post-image,
+.user-picture,
+#kojima-username,
+.post-icon {
+	cursor: pointer;
+}
+
+.top-nav {
+	width: 100%;
 	align-items: flex-start;
 	margin-top: 1%;
 	position: fixed;
@@ -37,17 +102,13 @@ body {
 	border-radius: 25px;
 	border: none;
 	padding-left: 20px;
-	font-size: 20px;
 	height: 5vh;
 	width: 50vw;
-	position: relative;
 	left: 6%;
 	top: 1vh;
 }
 
 #search-icon {
-	cursor: pointer;
-	position: relative;
 	left: 2.5%;
 	top: 2vh;
 }
@@ -56,11 +117,9 @@ body {
 	width: 100%;
 	max-width: 70px;
 	margin-left: 3%;
-	cursor: pointer;
 }
 
 #default-self {
-	position: relative;
 	margin-right: 2%;
 	top: 1vh;
 	left: 32%;
@@ -68,49 +127,37 @@ body {
 
 #self-label {
 	color: #F4F4F4;
-	font-size: 20px;
-	position: relative;
 	left: 31%;
 	top: 2.5vh;
-	cursor: pointer;
 }
 
 .left-sidebar {
 	margin-top: 4%;
 	margin-left: 2%;
-	font-size: 20px;
-	color: #FFFFFF;
-	display: flex;
 	flex-direction: column;
 	position: fixed;
 	z-index: 1;
 }
 
 .sidebar-icon {
-	cursor: pointer;
 	width: 100%;
 	max-width: 40px;
 	margin-right: 10px;
-	position: relative;
 	top: 6vh;
 	left: 15%;
 }
 
 .sidebar-label {
-	cursor: pointer;
-	position: relative;
 	left: 55%;
 	top: 9.5vh;
 }
 
 .profile-picture {
-	cursor: pointer;
 	width: 100%;
 	max-width: 50px;
 }
 
 .right-sidebar {
-	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	float: right;
@@ -122,42 +169,31 @@ body {
 
 #people-you-might-know-text {
 	font-size: 24px;
-	color: #FFFFFF;
 	font-weight: normal;
 }
 
 .user-label {
-	color: #FFFFFF;
-	font-size: 20px;
-	cursor: pointer;
-	position: relative;
 	left: 21%;
 	top: 1vh;
 }
 
 .add-user-label {
 	color: #22A2F2;
-	font-size: 16px;
-	cursor: pointer;
-	position: relative;
 	left: 83%;
 	bottom: 1.5vh;
 }
 
 .know-user {
-	position: relative;
 	bottom: 5vh;
 	margin-bottom: -10%;
 }
 
 .post-box {
-	display: flex;
 	flex-wrap: wrap;
 	border: 1px solid #4C5C68;
 	box-sizing: border-box;
 	padding: 10px;
 	max-width: 40%;
-	position: relative;
 	top: 15.5vh;
 	left: 25%;
 	padding: 1.5vh 1.5vw;
@@ -168,7 +204,6 @@ body {
 	color: #F2F2F2;
 	font-size: 15px;
 	text-align: left;
-	background-color: #222222;
 	border: none;
 	width: 100%;
 	margin-bottom: 7%;
@@ -188,7 +223,6 @@ body {
 	height: 100%;
 	max-height: 25px;
 	padding-right: 6px;
-	cursor: pointer;
 	align-items: flex-start;
 }
 
@@ -198,24 +232,20 @@ body {
 	width: 5vw;
 	height: 4.5vh;
 	border: none;
-	cursor: pointer;
 	font-size: 12px;
 	background-color: #1985A1;
 	color: black;
 	border-radius: 10px;
-	position: relative;
 	bottom: 1vh;
 	left: 73%;
 }
 
 .post {
-	display: flex;
 	flex-wrap: wrap;
 	border: 1.5px solid #484848;
 	margin-bottom: 30px;
 	max-width: 40%;
 	height: 80vh;
-	position: relative;
 	top: 18.5vh;
 	left: 25%;
 }
@@ -230,35 +260,27 @@ body {
 	margin: 5% 15%;
 	max-height: 507px;
 	max-width: 509px;
-	cursor: pointer;
 }
 
 .user-picture {
 	border-radius: 50%;
-	position: relative;
 	top: 35%;
 	margin-left: -60%;
 	margin-bottom: -8%;
-	cursor: pointer;
 }
 
 #kojima-username {
-	color: #FFFFFF;
 	font-size: 24px;
-	position: relative;
 	top: 35%;
 	padding-left: 5%;
-	cursor: pointer;
 }
 
 .post-icon {
 	max-width: 32px;
 	height: auto;
-	position: relative;
 	top: 82%;
 	margin-left: 3%;
 	left: 12%;
-	cursor: pointer;
 }
 
 #heart-icon {
@@ -267,7 +289,6 @@ body {
 
 .post-description {
 	color: #F2F2F2;
-	font-size: 16px;
 	margin-top: 0;
 	margin-left: 15%;
 }
