@@ -1,0 +1,100 @@
+/*
+Configuração padrão da fonte Inter
+Fonte: https://rsms.me/inter/
+*/
+:root {
+	font-family: Inter, sans-serif;
+	font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+	:root {
+		font-family: InterVariable, sans-serif;
+	}
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	background-color: #222222;
+	font-size: 16px
+}
+
+.top-nav {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 1%;
+}
+
+#search-bar {
+	color: #FFFFFF80;
+	background-color: #48484833;
+	border-radius: 25px;
+	border: none;
+	padding-left: 20px;
+	font-size: 20px;
+	height: 5vh;
+	width: 50vw;
+	position: relative;
+	left: 6%;
+	top: 1vh;
+}
+
+#search-icon {
+	cursor: pointer;
+	position: relative;
+	left: 2.5%;
+	top: 2vh;
+}
+
+#logo {
+	width: 100%;
+	max-width: 70px;
+	margin-left: 2%;
+	cursor: pointer;
+}
+
+#default-self {
+	position: relative;
+	margin-right: 2%;
+	top: 1vh;
+	left: 33%;
+}
+
+#self-label {
+	color: #F4F4F4;
+	font-size: 20px;
+	position: relative;
+	left: 32%;
+	top: 2.5vh;
+	cursor: pointer;
+}
+
+.left-sidebar {
+	margin-top: 4%;
+	margin-left: 2%;
+	font-size: 20px;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar-icon {
+	cursor: pointer;
+	width: 100%;
+	max-width: 40px;
+	margin-right: 10px;
+	position: relative;
+	bottom: 3vh;
+}
+
+.sidebar-label {
+	cursor: pointer;
+	position: relative;
+	left: 3%;
+	top: 0.5vh;
+}
+
+.profile-picture {
+	cursor: pointer;
+}
