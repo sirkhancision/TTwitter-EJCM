@@ -16,7 +16,6 @@ Fonte: https://rsms.me/inter/
 body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
   background-color: #222222;
   font-size: 16px;
 }
@@ -122,11 +121,15 @@ label,
 
 /* Responsividade para telas panorâmicas */
 @media only screen and (min-width: 1366px) {
+  body {
+    overflow: hidden;
+  }
+
   #logo {
     display: block;
     position: relative;
     max-width: 100%;
-    top: 30vh;
+    top: 35vh;
     right: -75%;
   }
 
@@ -136,7 +139,7 @@ label,
     float: left;
     margin-left: 10%;
     position: relative;
-    bottom: 23vh;
+    top: -18vh;
   }
 
   .credentials-label {
@@ -150,5 +153,41 @@ label,
   #toggle-password,
   #toggle-confirm-password {
     top: -3.2vh;
+  }
+}
+
+/* Responsividade para telas em retrato */
+@media only screen and (max-width: 1365px) {
+  #logo {
+    display: block;
+    margin: 5% auto;
+    max-width: 10%;
+  }
+
+  #signup-field {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    height: 85vh;
+    width: 60vw;
+  }
+
+  .credentials,
+  .button {
+    width: 50vw;
+    height: 5vh;
+  }
+
+  .credentials-label {
+    top: 25px;
+  }
+
+  #confirm-password-label {
+    top: 8px;
+  }
+
+  #toggle-password,
+  #toggle-confirm-password {
+    top: -3.5vh;
   }
 }
