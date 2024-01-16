@@ -1,0 +1,154 @@
+/*
+Configuração padrão da fonte Inter
+Fonte: https://rsms.me/inter/
+*/
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #222222;
+  font-size: 16px;
+}
+
+#signup-field,
+.credentials,
+label,
+#login-button {
+  background-color: #F2F2F2;
+}
+
+#signup-field {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-button {
+  color: #105F74;
+}
+
+#login-button {
+  background-color: #F2F2F2;
+}
+
+.text {
+  color: #222222;
+}
+
+#signup-text,
+.button {
+  font-weight: bold;
+}
+
+#signup-text {
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.credentials,
+.button {
+  box-sizing: border-box;
+  width: 20vw;
+  height: 5vh;
+}
+
+.credentials {
+  padding-left: 10px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-top: 2vh;
+  border: 1px solid #222222;
+}
+
+.credentials-label {
+  display: block;
+  font-size: 12px;
+  width: fit-content;
+  padding: 0 5px;
+  position: relative;
+  left: 25px;
+}
+
+#toggle-password,
+#toggle-confirm-password {
+  color: #222222;
+  cursor: pointer;
+  position: relative;
+  left: 43%;
+}
+
+#confirm-password {
+  margin-top: 0;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#signup-button {
+  background-color: #105F74;
+  color: #F2F2F2;
+  border-radius: 8px;
+}
+
+.terms-conditions-field {
+  flex-wrap: nowrap;
+  margin-top: 0;
+  margin-bottom: 10%;
+}
+
+.terms-conditions-highlight {
+  color: #1985A1;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Responsividade para telas panorâmicas */
+@media only screen and (min-width: 1366px) {
+  #logo {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    top: 30vh;
+    right: -75%;
+  }
+
+  #signup-field {
+    height: 80vh;
+    width: 35vw;
+    float: left;
+    margin-left: 10%;
+    position: relative;
+    bottom: 23vh;
+  }
+
+  .credentials-label {
+    top: 28px;
+  }
+
+  #confirm-password-label {
+    top: 8px;
+  }
+
+  #toggle-password,
+  #toggle-confirm-password {
+    top: -3.2vh;
+  }
+}

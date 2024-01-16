@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/signup.css">
+  <!-- Essa parte habilita a fonte Inter -->
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <title>TTwitter Cadastro</title>
+</head>
+
+<body>
+  <img src="../assets/Logo TT.svg" id="logo">
+  <div id="signup-field">
+    <h2 class="text" id="signup-text">Cadastro</h2>
+    <form>
+      <label class="credentials-label" for="username">Nome</label>
+      <input class="credentials" id="username" placeholder="nome de usuário" type="text"> <br>
+      <label class="credentials-label" for="email">Email</label>
+      <input class="credentials" id="email" placeholder="example@email.com" type="email"> <br>
+      <label class="credentials-label" for="birthday">Data de nascimento</label>
+      <input class="credentials" id="birthday" placeholder="xx/xx/xxxx" type="date"> <br>
+      <label class="credentials-label" for="password">Senha</label>
+      <input class="credentials" id="password" placeholder="●●●●●●●●●" type="password"> <br>
+      <img src="../assets/eye.svg" id="toggle-password">
+      <label class="credentials-label" id="confirm-password-label" for="confirm-password">Confirmar senha</label>
+      <input class="credentials" id="confirm-password" placeholder="●●●●●●●●●" type="password"> <br>
+      <img src="../assets/eye.svg" id="toggle-confirm-password">
+    </form>
+    <div class="terms-conditions-field">
+      <input type="checkbox" id="terms-conditions" value="tos-agree">
+      <label for="terms-conditions" class="text" id="terms-conditions-text">Li e estou de acordo com os
+        <span class="terms-conditions-highlight">Termos</span>
+        e
+        <span class="terms-conditions-highlight">Condições de uso.</span>
+      </label> <br>
+    </div>
+    <input class="button" type="submit" id="signup-button" value="Cadastrar"> <br>
+    <input class="button" type="submit" id="login-button" value="Fazer Login"> <br>
+  </div>
+</body>
+
+</html>
