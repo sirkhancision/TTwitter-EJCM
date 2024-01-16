@@ -97,4 +97,30 @@ body {
 
 .profile-picture {
 	cursor: pointer;
+	width: 100%;
+	max-width: 50px;
+}
+
+.right-sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+#people-you-might-know-text {
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+.user-label {
+	color: #FFFFFF;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.add-user-label {
+	color: #22A2F2;
+	font-size: 16px;
+	cursor: pointer;
 }
