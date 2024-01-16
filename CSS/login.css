@@ -1,0 +1,179 @@
+/*
+Configuração padrão da fonte Inter
+Fonte: https://rsms.me/inter/
+*/
+:root {
+	font-family: Inter, sans-serif;
+	font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+	:root {
+		font-family: InterVariable, sans-serif;
+	}
+}
+
+body {
+	background-color: #222222;
+	font-size: 16px
+}
+
+#login-field,
+.credentials,
+label,
+#signup-button {
+	background-color: #F2F2F2;
+}
+
+#password-retrieval,
+#signup-button {
+	color: #105F74;
+}
+
+#login-field {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.text {
+	color: #222222;
+}
+
+#welcome-text,
+.button {
+	font-weight: bold;
+}
+
+#welcome-text {
+	margin-bottom: 3vh;
+}
+
+.credentials,
+.button {
+	box-sizing: border-box;
+	width: 20vw;
+	height: 5vh;
+}
+
+.credentials {
+	padding-left: 10px;
+	border-radius: 6px;
+	box-sizing: border-box;
+	margin-top: 2vh;
+	border: 1px solid #222222;
+}
+
+label {
+	display: block;
+	font-size: 12px;
+	width: fit-content;
+	padding: 0 5px;
+	position: relative;
+	left: 25px;
+}
+
+#toggle-password {
+	color: #222222;
+	cursor: pointer;
+	position: relative;
+	left: 43%;
+}
+
+#password-retrieval {
+	cursor: pointer;
+	margin-top: 0;
+	margin-bottom: 10%;
+}
+
+.button {
+	border: none;
+	cursor: pointer;
+}
+
+#login-button {
+	background-color: #105F74;
+	color: #F2F2F2;
+	border-radius: 8px;
+}
+
+#signup-button {
+	border: none;
+}
+
+#terms-conditions-text {
+	margin-top: 10%;
+}
+
+.terms-conditions-highlight {
+	color: #1985A1;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* Responsividade para telas panorâmicas */
+@media only screen and (min-width: 1366px) {
+	#logo {
+		display: block;
+		position: relative;
+		max-width: 100%;
+		top: 35vh;
+		margin-left: 10%;
+	}
+
+	#login-field {
+		height: 60vh;
+		width: 35vw;
+		float: right;
+		margin-right: 10%;
+		position: relative;
+		top: -10vh;
+	}
+
+	label {
+		top: 28px;
+	}
+
+	#toggle-password {
+		top: -3.2vh;
+	}
+
+	#password-retrieval {
+		position: relative;
+		left: 15%;
+	}
+}
+
+/* Responsividade para telas em retrato */
+@media only screen and (max-width: 1365px) {
+	#logo {
+		display: block;
+		margin: 5% auto;
+		max-width: 20%;
+	}
+
+	#login-field {
+		float: none;
+		margin: 0 auto;
+		height: 65vh;
+		width: 60vw;
+	}
+
+	.credentials,
+	.button {
+		width: 50vw;
+		height: 5vh;
+	}
+
+	label {
+		top: 25px;
+	}
+
+	#toggle-password {
+		top: -3.5vh;
+	}
+}
