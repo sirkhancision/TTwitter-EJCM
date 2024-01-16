@@ -14,6 +14,9 @@ Fonte: https://rsms.me/inter/
 }
 
 body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
 	background-color: #222222;
 	font-size: 16px
 }
@@ -93,6 +96,7 @@ label {
 .button {
 	border: none;
 	cursor: pointer;
+	font-size: 16px;
 }
 
 #login-button {
@@ -101,12 +105,8 @@ label {
 	border-radius: 8px;
 }
 
-#signup-button {
-	border: none;
-}
-
 #terms-conditions-text {
-	margin-top: 10%;
+	margin-bottom: 10%;
 }
 
 .terms-conditions-highlight {
