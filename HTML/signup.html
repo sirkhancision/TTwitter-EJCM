@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <script src="../JS/togglePassword.js"></script>
   <img src="../assets/Logo TT.svg" id="logo">
   <div id="signup-field">
     <h2 class="text" id="signup-text">Cadastro</h2>
@@ -24,10 +25,10 @@
       <input class="credentials" id="birthday" placeholder="xx/xx/xxxx" type="date"> <br>
       <label class="credentials-label" for="password">Senha</label>
       <input class="credentials" id="password" placeholder="●●●●●●●●●" type="password"> <br>
-      <img src="../assets/eye.svg" id="toggle-password">
+      <img src="../assets/eye.svg" onclick="togglePassword('password')" id="toggle-password">
       <label class="credentials-label" id="confirm-password-label" for="confirm-password">Confirmar senha</label>
       <input class="credentials" id="confirm-password" placeholder="●●●●●●●●●" type="password"> <br>
-      <img src="../assets/eye.svg" id="toggle-confirm-password">
+      <img src="../assets/eye.svg" onclick="togglePassword('confirm-password')" id="toggle-confirm-password">
     </form>
     <div class="terms-conditions-field">
       <input type="checkbox" id="terms-conditions" value="tos-agree">
@@ -37,8 +38,8 @@
         <span class="terms-conditions-highlight">Condições de uso.</span>
       </label> <br>
     </div>
-    <input class="button" type="submit" id="signup-button" value="Cadastrar"> <br>
-    <input class="button" type="submit" id="login-button" value="Fazer Login"> <br>
+    <a href="login.html"><input class="button" type="submit" id="signup-button" value="Cadastrar"></a> <br>
+    <a href="login.html"><input class="button" type="submit" id="login-button" value="Fazer Login"></a> <br>
   </div>
 </body>
 
