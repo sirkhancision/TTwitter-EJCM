@@ -22,6 +22,8 @@ body {
 }
 
 .top-nav {
+	background-color: #222222;
+	width: 100%;
 	display: flex;
 	align-items: flex-start;
 	margin-top: 1%;
@@ -53,7 +55,7 @@ body {
 #logo {
 	width: 100%;
 	max-width: 70px;
-	margin-left: 5%;
+	margin-left: 3%;
 	cursor: pointer;
 }
 
@@ -61,14 +63,14 @@ body {
 	position: relative;
 	margin-right: 2%;
 	top: 1vh;
-	left: 57%;
+	left: 32%;
 }
 
 #self-label {
 	color: #F4F4F4;
 	font-size: 20px;
 	position: relative;
-	left: 55%;
+	left: 31%;
 	top: 2.5vh;
 	cursor: pointer;
 }
@@ -204,4 +206,68 @@ body {
 	position: relative;
 	bottom: 1vh;
 	left: 73%;
+}
+
+.post {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1.5px solid #484848;
+	margin-bottom: 30px;
+	max-width: 40%;
+	height: 80vh;
+	position: relative;
+	top: 18.5vh;
+	left: 25%;
+}
+
+.user-post {
+	align-items: flex-start;
+}
+
+.post-image {
+	align-items: center;
+	justify-content: center;
+	margin: 5% 15%;
+	max-height: 507px;
+	max-width: 509px;
+	cursor: pointer;
+}
+
+.user-picture {
+	border-radius: 50%;
+	position: relative;
+	top: 35%;
+	margin-left: -60%;
+	margin-bottom: -8%;
+	cursor: pointer;
+}
+
+#kojima-username {
+	color: #FFFFFF;
+	font-size: 24px;
+	position: relative;
+	top: 35%;
+	padding-left: 5%;
+	cursor: pointer;
+}
+
+.post-icon {
+	max-width: 32px;
+	height: auto;
+	position: relative;
+	top: 82%;
+	margin-left: 3%;
+	left: 12%;
+	cursor: pointer;
+}
+
+#heart-icon {
+	left: 59%;
+}
+
+.post-description {
+	color: #F2F2F2;
+	font-size: 16px;
+	margin-top: 0;
+	margin-left: 15%;
 }
